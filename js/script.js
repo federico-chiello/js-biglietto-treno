@@ -19,7 +19,7 @@ var eta = 18
 var operazione;
 
 if (eta < 18) {
-  operazione = [(prezzoBiglietto * 20) / 100];
+  operazione = (prezzoBiglietto * 20) / 100;
   // console.log(operazione);
 }
 
