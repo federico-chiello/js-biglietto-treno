@@ -7,8 +7,18 @@ var chilometri = parseFloat(prompt('Inserire il numero dei km da percorrere'));
 
 var eta = parseInt(prompt('Inserire l\'età del passeggero'));
 
-var prezzoBiglietto = parseFloat('0.21');
+var prezzo = parseFloat('0.21');
 
-console.log(prezzoBiglietto * chilometri);
+var prezzoBiglietto = prezzo * chilometri;
 
-// document.getElementById('bigliettoTreno').innerHTML = prezzoBiglietto * chilometri;
+// console.log(prezzoBiglietto);
+
+// document.getElementById('bigliettoTreno').innerHTML = prezzoBiglietto;
+
+var maggiorenne = 18
+var operazione;
+
+if (maggiorenne < 18) {
+  operazione = [(prezzoBiglietto * 2) / 100];
+  console.log(operazione);
+}
