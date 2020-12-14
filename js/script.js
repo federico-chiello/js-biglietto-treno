@@ -15,12 +15,23 @@ var prezzoBiglietto = prezzo * chilometri;
 
 // document.getElementById('bigliettoTreno').innerHTML = prezzoBiglietto;
 
-var eta = 18
-var operazione;
+var eta;
+var prezzoBiglietto;
+var sconto = ((prezzoBiglietto * 20) / 100);
+var prezzoScontato = prezzoBiglietto - sconto;
+var prezzoFinale;
+var scontoOver = ((prezzoBiglietto * 40) / 100);
+var prezzoScontatoOver = prezzoBiglietto - scontoOver;
 
 if (eta < 18) {
-  operazione = (prezzoBiglietto * 20) / 100;
-  // console.log(operazione);
+  prezzoFinale = prezzoScontato;
+  // console.log(prezzoScontato);
+} else if (eta >= 65) {
+  prezzoFinale = prezzoScontatoOver;
+  // console.log(prezzoScontatoOver);
+} else if(eta >= 18){
+  prezzoFinale = prezzoBiglietto;
+  // console.log(prezzoBiglietto);
 }
 
-document.getElementById('minorenne').innerHTML = operazione;
+document.getElementById('sconto').innerHTML = prezzoFinale;
