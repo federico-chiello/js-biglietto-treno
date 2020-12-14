@@ -15,10 +15,12 @@ var prezzoBiglietto = prezzo * chilometri;
 
 // document.getElementById('bigliettoTreno').innerHTML = prezzoBiglietto;
 
-var maggiorenne = 18
+var eta = 18
 var operazione;
 
-if (maggiorenne < 18) {
-  operazione = [(prezzoBiglietto * 2) / 100];
-  console.log(operazione);
+if (eta < 18) {
+  operazione = [(prezzoBiglietto * 20) / 100];
+  // console.log(operazione);
 }
+
+document.getElementById('minorenne').innerHTML = operazione;
