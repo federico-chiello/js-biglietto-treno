@@ -34,4 +34,4 @@ if (eta < 18) {
   // console.log(prezzoBiglietto);
 }
 
-document.getElementById('sconto').innerHTML = prezzoFinale;
+document.getElementById('sconto').innerHTML = Math.trunc(prezzoFinale) + ' ' + '€';
